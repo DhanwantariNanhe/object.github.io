@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+
+    <div id="res">
+
+    </div>
+
+    <script>
+
+        var obj1 = {
+
+
+            name: 'Felix',
+            age: '30',
+            city: 'Pune',
+
+            showInfo: function(){
+
+                document.getElementById('res').innerHTML = this.name+ " " + this.age+" " + this.city+" "
+            }
+        }
+
+        console.log(obj1)
+        console.log(obj1.name)
+        console.log(obj1.age)
+        console.log(obj1.city)
+        console.log(obj1.name+" "+ obj1.age+" "+obj1.city+" ")
+        console.log(obj1.showInfo());
+
+
+        class User{
+
+
+            constructor(name, age,city){
+
+                this.name= name;
+                this.age= age;
+                this.city= city;
+            }
+
+        
+        }
+
+        var u = new User("Divya" , 27, "Mumbai");
+        console.log(u)
+        console.log(u.name)
+        console.log(u.age)
+        console.log(u.city)
+       
+       
+
+
+
+    </script>
+    
+</body>
+</html>
